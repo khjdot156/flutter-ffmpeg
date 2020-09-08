@@ -68,9 +68,9 @@ class FlutterFFmpegConfig {
           if (message.length > 0) {
             // PRINT ALREADY ADDS NEW LINE. SO REMOVE THIS ONE
             if (message.endsWith('\n')) {
-              print(message.substring(0, message.length - 1));
+              print('okoko=> ${message.substring(0, message.length - 1)}');
             } else {
-              print(message);
+              print('kkkkk${message}');
             }
           }
         } else {
