@@ -306,6 +306,7 @@ static NSString *const EVENT_STAT = @"FlutterFFmpegStatisticsCallback";
         }
 
         NSDictionary *metadataDictionary = [mediaInformation getMetadataEntries];
+        NSLog(@"FFprobe exited with rc: %d\n", metadataDictionary);
         if (metadataDictionary != nil && ([metadataDictionary count] > 0)) {
             dictionary[@"metadata"] = metadataDictionary;
         }
